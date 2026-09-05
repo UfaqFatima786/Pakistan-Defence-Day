@@ -188,9 +188,6 @@ gsap.from(".gallery-card", {
 
 });
 
-
-/* ================= PARALLAX ================= */
-
 gsap.to(".tribute::before", {
     yPercent: 20,
 
@@ -201,9 +198,6 @@ gsap.to(".tribute::before", {
         scrub: true
     }
 });
-
-
-/* ================= TRIBUTE ================= */
 
 gsap.from(".tribute-content", {
 
@@ -218,12 +212,8 @@ gsap.from(".tribute-content", {
 
     duration: 1.3,
 
-    ease: "power4.out"
-
 });
 
-
-/* ================= HOVER EFFECT ================= */
 
 document.querySelectorAll(".feature-card, .hero-card, .force-card")
 .forEach(card => {
@@ -233,7 +223,6 @@ document.querySelectorAll(".feature-card, .hero-card, .force-card")
         gsap.to(card, {
             y: -10,
             duration: .3,
-            // ease: "power2.out"
         });
 
     });
@@ -243,7 +232,6 @@ document.querySelectorAll(".feature-card, .hero-card, .force-card")
         gsap.to(card, {
             y: 0,
             duration: .3,
-            // ease: "power2.out"
         });
 
     });

@@ -27,6 +27,8 @@ body {
 }
 
 
+/* ================= NAVBAR ================= */
+
 .navbar {
     height: 76px;
     padding: 0 5%;
@@ -40,8 +42,8 @@ body {
     width: 100%;
 
     z-index: 1000;
+
     background: rgba(4, 15, 9, 0.82);
-    /* backdrop-filter: blur(18px); */
     border-bottom: 1px solid rgba(199,160,74,.25);
 }
 
@@ -200,14 +202,7 @@ nav a.active {
 .gold-line {
     width: 75px;
     height: 4px;
-
-    background:
-        linear-gradient(
-            90deg,
-            #8da53a,
-            #c99d45
-        );
-
+    background: linear-gradient( 90deg, #8da53a, #c99d45 );
     margin: 25px 0;
 }
 
@@ -221,12 +216,9 @@ nav a.active {
 
 .hero-description {
     max-width: 570px;
-
     font-size: 15px !important;
     line-height: 1.8;
-
     color: #c9c8be;
-
     margin-top: 15px;
 }
 
@@ -238,34 +230,21 @@ nav a.active {
 
 .btn {
     text-decoration: none;
-
     padding: 16px 27px;
-
     border-radius: 8px;
-
     font-size: 13px;
     font-weight: 700;
-
     transition: .35s;
 }
 
 .btn.primary {
     color: white;
-
-    background:
-        linear-gradient(
-            135deg,
-            #779b31,
-            #375c27
-        );
-
-    box-shadow:
-        0 12px 35px rgba(63,103,32,.35);
+    background: linear-gradient( 135deg, #779b31, #375c27);
+    box-shadow:0 12px 35px rgba(63,103,32,.35);
 }
 
 .btn.secondary {
     color: white;
-
     border: 1px solid #a98643;
 }
 
@@ -275,31 +254,27 @@ nav a.active {
 
 .hero-scroll {
     position: absolute;
-
     bottom: 30px;
     left: 7%;
-
     display: flex;
     align-items: center;
     gap: 15px;
-
     color: #aaa;
-
     font-size: 10px;
     letter-spacing: 3px;
-
     z-index: 5;
 }
 
 .hero-scroll div {
     width: 45px;
     height: 1px;
-
     background: #aa873d;
 }
 
-
-/* ================= SECTIONS ================= */
+.image-glow {
+    width: 600px;
+    margin-right: 150px;
+}
 
 .section {
     padding: 120px 7%;
@@ -329,9 +304,6 @@ nav a.active {
     color: #9da39b;
     line-height: 1.7;
 }
-
-
-/* ================= FEATURES ================= */
 
 .features {
     padding: 30px 5% 90px;
@@ -400,31 +372,17 @@ nav a.active {
     line-height: 1.6;
 }
 
-
-/* ================= HISTORY ================= */
-
 .history {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 80px;
-
-    background:
-        radial-gradient(
-            circle at 80% 30%,
-            rgba(106,78,36,.18),
-            transparent 30%
-        );
+    background: radial-gradient( circle at 80% 30%, rgba(106,78,36,.18), transparent 30% );
 }
 
 .history-content h2 {
     font-family: "Oswald";
-
     font-size: clamp(50px, 5vw, 75px);
-
     line-height: 1;
-
     margin-top: 20px;
 }
 
@@ -469,33 +427,19 @@ nav a.active {
 
 .image-card {
     position: absolute;
-
     border-radius: 20px;
-
     overflow: hidden;
-
     border: 1px solid #8d7039;
-
-    background:
-        linear-gradient(
-            145deg,
-            #667b3d,
-            #49351f
-        );
+    background: linear-gradient( 145deg, #667b3d, #49351f);
 }
 
 .image-card::before {
     content: "🇵🇰";
-
     position: absolute;
-
     font-size: 180px;
-
     top: 40px;
     left: 50%;
-
     transform: translateX(-50%);
-
     opacity: .16;
 }
 
@@ -511,29 +455,17 @@ nav a.active {
     height: 260px;
     right: 0;
     bottom: 0;
-
-    background:
-        linear-gradient(
-            135deg,
-            #304b28,
-            #9a7040
-        );
+    background: linear-gradient( 135deg, #304b28, #9a7040 );
 }
 
 .image-overlay {
     position: absolute;
     inset: 0;
-
-    background:
-        linear-gradient(
-            transparent 20%,
-            rgba(0,0,0,.85)
-        );
+    background: linear-gradient( transparent 20%, rgba(0,0,0,.85) );
 }
 
 .image-text {
     position: absolute;
-
     bottom: 25px;
     left: 25px;
     right: 20px;
@@ -555,9 +487,6 @@ nav a.active {
     font-size: 12px;
 }
 
-
-/* ================= TIMELINE ================= */
-
 .timeline-section {
     background: #09170f;
 }
@@ -565,54 +494,36 @@ nav a.active {
 .timeline {
     max-width: 950px;
     margin: auto;
-
     position: relative;
 }
 
 .timeline::before {
     content: "";
-
     position: absolute;
-
     left: 50%;
-
     top: 0;
     bottom: 0;
-
-    width: 1px;
-
-    background:
-        linear-gradient(
-            #a48a43,
-            transparent
-        );
+    width: 1p;
+    background: linear-gradient( #a48a43, transparent );
 }
 
 .timeline-item {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 60px;
-
     margin-bottom: 70px;
-
     position: relative;
 }
 
 .timeline-year {
     text-align: right;
-
     color: #9cab3c;
-
     font-family: "Oswald";
-
     font-size: 45px;
 }
 
 .timeline-content {
     border-left: 2px solid #795e2f;
-
     padding-left: 30px;
 }
 
@@ -626,65 +537,36 @@ nav a.active {
     line-height: 1.7;
 }
 
-
-/* ================= HEROES ================= */
-
 .hero-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
 .hero-card {
     min-height: 330px;
-
     padding: 30px;
-
     position: relative;
-
     overflow: hidden;
-
     border-radius: 18px;
-
     border: 1px solid rgba(160,128,63,.4);
-
-    background:
-        linear-gradient(
-            145deg,
-            #15291a,
-            #241c12
-        );
-
+    background: linear-gradient( 145deg, #15291a, #241c12 );
     transition: .4s;
 }
 
 .hero-card::after {
     content: "";
-
     position: absolute;
-
     width: 180px;
     height: 180px;
-
     border-radius: 50%;
-
     right: -80px;
     bottom: -80px;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(135,157,48,.25),
-            transparent
-        );
+    background: radial-gradient( circle, rgba(135,157,48,.25), transparent );
 }
 
 .hero-card:hover {
     transform: translateY(-12px);
-
     border-color: #9da73d;
 }
 
@@ -692,9 +574,7 @@ nav a.active {
     position: absolute;
     top: 20px;
     right: 25px;
-
     color: #59633b;
-
     font-family: "Oswald";
     font-size: 35px;
 }
@@ -722,9 +602,6 @@ nav a.active {
     letter-spacing: 3px;
 }
 
-
-/* ================= FORCES ================= */
-
 .forces {
     background:
         linear-gradient(
@@ -736,22 +613,16 @@ nav a.active {
 
 .force-grid {
     display: grid;
-
     grid-template-columns:
         repeat(3, 1fr);
-
     gap: 25px;
 }
 
 .force-card {
     padding: 45px;
-
     min-height: 300px;
-
     border-radius: 18px;
-
     border: 1px solid #66532d;
-
     background:
         linear-gradient(
             145deg,
@@ -791,8 +662,6 @@ nav a.active {
     font-size: 11px;
 }
 
-
-/* ================= GALLERY ================= */
 
 .gallery-grid {
     display: grid;
