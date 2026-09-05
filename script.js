@@ -206,12 +206,6 @@ gsap.from(".tribute-content", {
         start: "top 70%"
     },
 
-    scale: .8,
-
-    opacity: 0,
-
-    duration: 1.3,
-
 });
 
 
